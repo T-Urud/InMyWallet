@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+}
+
+.global-grid{
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "sidebar main main"
+    "sidebar main main"
+    "footer footer footer";
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto 1fr auto;
+}
+.area-header{
+  grid-area: header;
+}
+.area-sidebar{
+  grid-area: sidebar;
+}
+.area-main{
+  grid-area: main;
+}
+.area-footer{
+  grid-area: footer;
+}
+
+.dashboard-grid{
+  display: grid;
+  grid-template-areas: 
+    "a b b"
+    "a b b";
+  grid-template-columns: 38% 60%;
+  grid-template-rows: auto 1fr;
+
+}
